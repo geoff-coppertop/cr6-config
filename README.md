@@ -19,8 +19,8 @@ Open your moonraker.conf and add
 [update_manager cr6-config]
 type: git_repo
 channel: dev
-primary_branch: master
-path: ~/cr6-config
+primary_branch: main
+path: ~/printer_data/config/cr6-config
 origin: https://github.com/geoff-coppertop/cr6-config.git
 managed_services: klipper
 ```
@@ -32,15 +32,8 @@ below the mainsail updater section.
 SSH into your PI and run the following,
 
 ```bash
-cd ~
+cd ~/printer_data/config/
 git clone https://github.com/geoff-coppertop/cr6-config.git
-ln -sf ~/cr6-config/cr66.cfg ~/printer_data/config/cr6.cfg
-```
-
-Then link the prepared moonraker update file,
-
-```bash
-ln -sf ~/cr6-config/cr6-moonraker-update.conf ~/printer_data/config/cr6-moonraker-update.conf
 ```
 
 Then open your moonraker.conf and add
