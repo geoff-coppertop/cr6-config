@@ -18,6 +18,7 @@ Open your moonraker.conf and add
 ```ini
 [update_manager cr6-config]
 type: git_repo
+channel: dev
 primary_branch: master
 path: ~/cr6-config
 origin: https://github.com/geoff-coppertop/cr6-config.git
