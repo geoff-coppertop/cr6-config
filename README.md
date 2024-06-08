@@ -1,11 +1,10 @@
 # CR6 klipper settings and macros
 
-This repo provides the settings and macros needed to run a CR-6 SE with a BTT SKR CR6 board using a dual extruder.
+This repo provides the settings and macros needed to run a CR-6 SE that uses an SKR pico for the mainboard and an CAN connected ebb36 for the toolhead.
 
 ## Important features
 
 * Printer definition
-* Macros to run the probe
 
 ## How to install
 
@@ -39,7 +38,7 @@ git clone https://github.com/geoff-coppertop/cr6-config.git
 Then open your moonraker.conf and add
 
 ```ini
-[include cr6-moonraker-update.conf]
+[include ~/printer_data/config/cr6-config/moonraker.conf]
 ```
 
 below the mainsail updater section.
